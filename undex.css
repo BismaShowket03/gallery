@@ -1,0 +1,50 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+height: 100vh;
+background-color: #1d061a;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+
+
+
+}
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition:0.5s
+}
+.container .box::before{
+
+
+    content: '';
+    position: absolute;
+    left:50px;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    background:white;
+    border-radius: 8px;
+    transform: skew(15deg);
+    transition: 0.5s;
+    
+
+}
+body{
+    background-color:pink;
+}
+p{
+    color: white;
+}
